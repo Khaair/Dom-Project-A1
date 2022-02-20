@@ -1,0 +1,110 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans);
+
+.Containers {
+  display: flex;
+  justify-content: center;
+  padding: 2px 16px;
+  margin-top: 40px;
+}
+
+.weather01 {
+  height: 200px;
+
+  border-radius: 20px 20px 0px 0px;
+}
+.wtitle {
+  display: flex;
+  justify-content: center;
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+  width: 400px;
+  border-radius: 20px;
+  height: 500px;
+}
+
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+
+.search {
+  width: auto;
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+
+.searchTerm {
+  width: auto;
+  border: 3px solid #00b4cc;
+  border-right: none;
+  padding: 5px;
+  height: 20px;
+  border-radius: 5px 0 0 5px;
+  outline: none;
+  color: #9dbfaf;
+}
+
+.searchTerm:focus {
+  color: #00b4cc;
+}
+
+.searchButton {
+  width: 80px;
+  height: 36px;
+  border: 1px solid #00b4cc;
+  background: #00b4cc;
+  text-align: center;
+  color: #fff;
+  border-radius: 0 5px 5px 0;
+  cursor: pointer;
+  font-size: 20px;
+}
+
+.kk {
+  display: flex;
+  justify-content: center;
+}
+
+.convert{
+    display: flex;
+    justify-content: center;
+
+    margin-top: 8px;
+}
+
+.convert{
+    height: 39px;
+    
+ 
+}
+
+.convert input{
+    border: 3px solid #23A8F0;
+    border-radius: 5px;
+    margin-right: 3px;
+    outline: none;
+}
+
+.convert button{
+    border: 3px solid #23A8F0;
+    border-radius: 5px;
+    color: white;
+    background-color: #23A8F0;
+    
+}
+
+.convert button:hover{
+   
+    border: 3px solid #23A8F0;
+    background-color: white;
+    color: black;
+   
+}
+
+
+.ress{
+    text-align: center;
+}
