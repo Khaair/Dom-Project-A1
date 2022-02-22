@@ -3,20 +3,29 @@ var myArr1 = [];
 
 var myArr2 = [];
 
-function sum(a){
+var myArr3 = [];
+
+function sum1(a){
 var summ = myArr1.reduce((a, b) => a + b, 0);
 var rate = summ/a
-document.getElementById('show').innerHTML = summ;
+document.getElementById('show1').innerHTML = summ;
 return rate
 }
 
 
-function sum(a){
+function sum2(a){
     var summ = myArr2.reduce((a, b) => a + b, 0);
     var rate = summ/a
     document.getElementById('show2').innerHTML = summ;
     return rate
     }
+
+    function sum3(a){
+        var summ = myArr2.reduce((a, b) => a + b, 0);
+        var rate = summ/a
+        document.getElementById('show2').innerHTML = summ;
+        return rate
+        }
 
 
 function total(){
@@ -29,7 +38,7 @@ function total(){
 
 function  Calculation1(){
     
-       var inputText = document.getElementById('data').value;
+       var inputText = document.getElementById('data1').value;
 
        let num = parseFloat(inputText)
        
@@ -42,12 +51,8 @@ function  Calculation1(){
            pval = pval + myArr1[i]
        }
        
-     
        document.getElementById('res').innerHTML = myArr1;
-
-   
-
-}
+    }
 
 
 
@@ -66,10 +71,23 @@ function  Calculation2(){
     {
         pval = pval + myArr2[i]
     }
-    
-  
     document.getElementById('res2').innerHTML = myArr2;
+}
 
 
+function  Calculation3(){
+    
+    var inputText = document.getElementById('data3').value;
 
+    let num = parseFloat(inputText)
+    
+    myArr2.push(num);
+    
+    var pval = "";
+    
+    for(i = 0; i < myArr2.length; i++)
+    {
+        pval = pval + myArr2[i]
+    }
+    document.getElementById('res2').innerHTML = myArr2;
 }
